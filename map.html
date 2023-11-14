@@ -81,13 +81,13 @@
         layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
 
         if (file !== undefined) {
-          addGPXLayer(file.fileName, file.fileContents, layerControl, map);
+          addGPXLayer(file.fileName, file.fileContent, layerControl, map);
         }
       }
 
       function readQueryParameterFileAndLoadMap() {
         let params = new URLSearchParams(document.location.search);
-        let fileName = params.get("file");
+        let fileName = params.get('file');
 
         if (fileName !== null) {
           fetch(fileName).then(x => x.text()).then(content => {
