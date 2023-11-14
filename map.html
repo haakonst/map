@@ -90,7 +90,7 @@
         let fileName = params.get("file");
 
         if (fileName !== null) {
-          fetch(fileName, { mode: "no-cors" }).then(x => x.text()).then(content => {
+          fetch(fileName).then(x => x.text()).then(content => {
             if (content !== '') {
               loadMap({ fileName: fileName, fileContent: content });
             } else {
