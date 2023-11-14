@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.0" xmlns="http://www.topografix.com/GPX/1/0">
+  <bounds minlat="59" minlon="-9" maxlat="60" maxlon="11"/>
+  <wpt lat="59.9" lon="10.7">
+    <name>Oslo</name>
+  </wpt>
+</gpx>
